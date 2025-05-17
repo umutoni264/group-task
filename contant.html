@@ -10,7 +10,8 @@
     <link rel="stylesheet" href="style, css.css">
 
 </head>
-<body style="background-color: darkorchid;color: aliceblue;">
+<body style="background-color: rgb(172, 159, 179);color: aliceblue;">
+    <H1>CONTACT US</H1>
     <header style="padding: 3cm;">
         <nav>
             <h1 class="bg-primary">agape market</h1>
@@ -29,15 +30,15 @@
         </center>
         <h1 style="background-color: chartreuse;">contact us</h1>
         <div style="padding: 3cm;display: 6pdx;">
-        <form action="" >
+        <form action="" id="contact-form">
             <label for="">name</label>
-            <input type="text" name="name" id="require"><br><br>
+            <input type="text" name="name" id="name"><br><br>
             <label for="">password</label>
-            <input type="password" name="password" id="require"><br><br>
+            <input type="password" name="password" id=""><br><br>
             <label for="">user email</label>
-            <input type="email" name="email" id="require"><br><br>
+            <input type="email" name="email" id="email"><br><br>
             <label for="">message</label>
-            <input type="message" name="message" id="require">
+            <input type="message" name="message" id="message">
             <center>
             <button class="btn btn-primary">send</button>
             </center>
@@ -46,15 +47,31 @@
         <div style="padding: 5cm;">
         <img src="OIP (1).jpg" alt="">
     </div>
-    <h1>our location is kiramuruzi</h1>
+    <h1 style="background-color: chartreuse;">our location is kiramuruzi</h1>
     <img src="WhatsApp-Image-2021-02-05-at-12.25.21-PM-1024x618.jpeg" alt="">
-    <h1>market that shop of product</h1>
+    <h1 style="background-color: coral;">market that shop of product</h1>
     <div style="padding: 3cm;">
     <img src="abaturage_ba_kiramuruzi_bari_bitabiriye_ubukangurambaga_ari_benshi.jpg" alt="">
     </div>
 </mai>
 <footer>
-    <p style="padding: 2cm;">agape market of 2025</p>
+    <p style="padding: 2cm;background-color: aqua;">agape market of 2025</p>
 </footer>
+ <script>
+    document.getElementById("contact-form").addEventListener("submit", function(e) {
+  const name = document.getElementById("name").value.trim();
+  const email = document.getElementById("email").value.trim();
+  const message = document.getElementById("message").value.trim();
+
+  if (!name || !email || !message) {
+    alert("Please fill in all fields.");
+    e.preventDefault();
+  } else {
+    
+    alert("Thank you for contacting Agape Market!");
+  }
+});
+
+    </script>
 </body>
 </html>
