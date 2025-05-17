@@ -1,7 +1,7 @@
 body{
     margin: 2cm;
     background-color: cyan;color: black;
-    display: flex;column-gap: 8px;
+    display: flex;lcolumn-gap: 8px;
 }
 header{
 
