@@ -1,0 +1,13 @@
+body{
+    margin: 2cm;
+    background-color: cyan;color: black;
+    display: flex;column-gap: 8px;
+}
+header{
+    background-color: magenta;color:azure
+h1 to h6{
+    background-color: cyan;color: gold;
+}
+table{
+    width: 8cm;height: 8cm;
+}
